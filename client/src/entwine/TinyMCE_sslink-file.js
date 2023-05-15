@@ -74,6 +74,7 @@ jQuery.entwine('ss', ($) => {
       const tagName = selection.getNode().tagName;
       const requireLinkText = tagName !== 'A' && selectionContent.trim() === '';
 
+      console.log(folderId);
       // create/update the react component
       ReactDOM.render(
         <InjectableInsertMediaModal
